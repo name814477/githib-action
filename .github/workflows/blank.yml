@@ -23,11 +23,13 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
-        with:
-          github-server-url: 'https://hycgitlab.ril.com/Aakash2.Yadav/hello.git'
-          repository: aakash2.yadav/hello
-          token: 'glpat-v3LTpiYtxTvPaJMZP3wQ'
+      #- uses: actions/checkout@v3
+      - name: checkout 
+        run: git clone "https://aakash2.yadav:glpat-v3LTpiYtxTvPaJMZP3wQ@hycgitlab.ril.com/Aakash2.Yadav/hello.git" main 
+   # with:
+    #      github-server-url: 'https://hycgitlab.ril.com/Aakash2.Yadav/hello.git'
+     #     repository: aakash2.yadav/hello
+      #    token: 'glpat-v3LTpiYtxTvPaJMZP3wQ'
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
