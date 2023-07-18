@@ -25,7 +25,10 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       #- uses: actions/checkout@v3
       - name: checkout 
-        run: git clone "http://aakash2.yadav:glpat-aVvAxk9dRx_1nbDyyP63@hycgitlab.ril.com/Aakash2.Yadav/hello.git" 
+        run: |
+           git clone "http://aakash2.yadav:glpat-aVvAxk9dRx_1nbDyyP63@hycgitlab.ril.com/Aakash2.Yadav/hello.git" 
+           cd hello
+           cat h
    # with:
     #      github-server-url: 'https://hycgitlab.ril.com/Aakash2.Yadav/hello.git'
      #     repository: aakash2.yadav/hello
